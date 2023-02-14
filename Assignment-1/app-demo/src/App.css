@@ -1,0 +1,12 @@
+.Main-box{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  height: 100vh;
+}
+.box{
+  border: 1px solid red;
+    margin: 5px;
+    padding: 10px;
+    width: 33%
+}
