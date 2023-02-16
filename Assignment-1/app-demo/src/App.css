@@ -10,3 +10,12 @@
     padding: 10px;
     width: 33%
 }
+.Counter{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  border: 1px solid red;
+  margin: 5px;
+  padding: 10px;
+  width: 100%
+}

@@ -1,7 +1,11 @@
 import React, { Fragment } from "react";
 import "../App.css"
 
-export default function NewApp() {
+export default function NewApp(props) {
+  const {name , address , city} = props
+  React.useEffect(() => {
+    console.log("It call six time in console")
+ }, [])
   const newStytle = {
     border: "1px solid red",
     margin: "5px",
@@ -11,12 +15,10 @@ export default function NewApp() {
   return (
     <Fragment>
       <div className="box" style={newStytle}>
-        <h1>Hello</h1>
+        <h1>Hello {name} </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum rerum,
-          neque deleniti ullam amet, delectus eos eum quod praesentium quaerat
-          at ipsam ducimus, architecto voluptate harum. Excepturi accusantium
-          alias quaerat!
+          Where are you from - I am from  {city} .
+          your current Address-{address} .
         </p>
       </div>
     </Fragment>
